@@ -1,0 +1,29 @@
+
+.background-img {
+    background: url(../../../assets/img/about.jpg) repeat;
+    padding-top: 100vh !important;
+    background-size: cover !important;
+    background-position: center !important;
+  }
+
+  .letrero-container {
+    margin: 5vh;
+    background-color: #ffffff;
+    border: 1px solid black;
+    opacity: 0.6;
+    filter: alpha(opacity=60);
+    position: fixed;
+    top: 50vh;
+    right: 0;
+    left: 0;
+    z-index: 1;
+  }
+
+  .letrero-container .h6 {
+    margin: 5%;
+    font-weight: bold;
+    color: #000000;
+  }
+  
+  
+

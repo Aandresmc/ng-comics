@@ -1,0 +1,14 @@
+<div class="container mt-5 mb-5">
+  <h1 *ngIf="busqueda!=''">Resultados... <small>{{this.busqueda}}</small></h1>
+  <div class="row animated  fadeIn  pt-2" *ngIf="heroes.length == 0">
+    <div class="col-md-12">
+      <div class="alert alert-info" role="info">
+        No existen ningun resultado para esta busqueda
+      </div>
+    </div>
+  </div>
+  <div class="card-columns">
+    <app-heroe-tarjeta [heroe]="heroe"  *ngFor="let heroe of heroes;">
+    </app-heroe-tarjeta>
+  </div>
+</div>

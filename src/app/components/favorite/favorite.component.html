@@ -1,0 +1,17 @@
+<div class="container mt-5 mb-5">
+  <h1>Heroes <small>favoritos</small></h1>
+  <div class="row animated  fadeIn  pt-2 justify-content-center" *ngIf="heroes.length == 0">
+    <div class="col-md-12 col-lg-10">
+      <div class=" container text-center">
+        <img class="col-md-5 mx-auto " src="assets/img/no-encontrado.png" alt="no encontrado">
+        <h6 class="display-4 text-center"> No se ha agregado ningun Heroe a la Lista....
+        </h6>
+      </div>
+    </div>
+  </div>
+  <div class="card-columns">
+    <app-heroe-tarjeta (heroeSeleccionado)="verHeroe($event)" [heroe]="heroe"
+      *ngFor="let heroe of heroes;">
+    </app-heroe-tarjeta>
+  </div>
+</div>

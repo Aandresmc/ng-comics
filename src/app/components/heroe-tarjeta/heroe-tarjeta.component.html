@@ -1,0 +1,13 @@
+<div class=" card animated fadeIn">
+  <img [src]="heroe.img" class="card-img-top" [alt]="heroe.nombre">
+  <div class="card-body">
+    <h5 class="card-title d-inline-block">{{heroe.nombre}}</h5>
+    <button (click)="agregarFavorito(heroe)" type="button" class="btn btn-outline-danger float-right d-inline-block" data-toggle="snackbar" data-style="toast" data-content="Fried chicken out of stock.">
+      <i class="far fa-heart"></i>
+    </button>
+    <ngx-snackbar [position]="'top-center'" [max]="3"></ngx-snackbar>
+    <p class="card-text"><small class="text-muted">{{heroe.aparicion}}</small></p>
+    <button class="btn btn-block btn-outline-danger my-2 my-sm-0" type="submit" (click)="verHeroe()">ver
+      más ...</button>
+  </div>
+</div>

@@ -1,0 +1,8 @@
+.img-fondo{
+    background:url(../../../assets/img/homeDeadpool.jpg) no-repeat !important;
+    padding-top:22vh!important;
+    padding-bottom:22vh!important;
+    background-size:cover!important;
+    background-position: center!important
+}
+.container.animated.fadeIn:hover {filter: grayscale(80%);}
