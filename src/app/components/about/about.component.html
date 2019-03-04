@@ -1,36 +1,40 @@
 <div class="background-img">
-  <div class="letrero-container">
-    <h6>Sobre Comics App Frase...</h6>
-    <p class="animated fadeIn ">
-        {{frase}}
-    </p>
-  </div>
-</div>
-<ngx-fab  data-toggle="modal" data-target="#exampleModal"  [iconClass]="'fas fa-comment-alt'" [position]="'middle-left'" [fabSize]="'small'" [additionalY]="200">
-</ngx-fab>
-<div  class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-  aria-hidden="true">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Elige tu frase</h5>
-        <button  #closeModal type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
+    <div class="container">
+      <div class="letrero-container">
+        <h6>Sobre Comics App Frase...</h6>
+        <p class="animated fadeIn ">
+          "{{frase}}"
+        </p>
       </div>
-      <div class="modal-body">
-        <form>
-          <div class="form-group">
-            <label for="message-text" class="col-form-label">Message:</label>
-            <textarea #txtArea class="form-control" id="message-text"></textarea>
+      <button   data-toggle="modal" data-target="#exampleModal" class="btn btn-danger buttonfab">
+        <i class="far fa-comment-alt"></i>
+      </button>
+  
+    </div>
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+      aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Elige tu frase</h5>
+            <button #closeModal type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
           </div>
-        </form>
-      </div>
-      <div class="modal-footer">
-        <button (click)="cambiarFrase(txtArea.value)" type="button" class="btn-sm btn-danger rounded-circle no-outline">
-          <i class="fas fa-paper-plane"></i>
-        </button>
+          <div class="modal-body">
+            <form>
+              <div class="form-group">
+                <label for="message-text" class="col-form-label">Message:</label>
+                <textarea #txtArea class="form-control" id="message-text"></textarea>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button (click)="cambiarFrase(txtArea.value)" type="button"
+              class="btn-sm btn-danger rounded-circle no-outline">
+              <i class="fas fa-paper-plane"></i>
+            </button>
+          </div>
+        </div>
       </div>
     </div>
-  </div>
-</div>
