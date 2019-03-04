@@ -49,7 +49,7 @@
 
    @media (min-width: 480px) {
     .buttonfab{
-      top: 78vh;
+      top: 77vh;
       left: 40vh;
 
     } 
@@ -57,7 +57,7 @@
 
   @media (min-width: 576px) {
     .buttonfab{
-      top: 79vh;
+      top: 77vh;
       left: 50vh;
 
     } 
@@ -65,7 +65,7 @@
   
    @media (min-width: 768px) { 
     .buttonfab{
-      top: 80vh;
+      top: 77vh;
       left: 60vh;
 
     }  
@@ -73,7 +73,7 @@
 
   @media (min-width: 992px) { 
     .buttonfab{
-      top: 81vh;
+      top: 77vh;
       left: 65vh;
 
     }  
@@ -82,7 +82,7 @@
  
   @media (min-width: 1200px) { 
     .buttonfab{
-      top: 83vh;
+      top: 77vh;
       left: 70vh;
 
     } 
