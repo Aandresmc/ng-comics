@@ -1,7 +1,8 @@
 # LOOK PAGE
 https://aandresmc.github.io/ng-comics/
 
-
+# LOOK SCREENSHOTS
+https://github.com/Aandresmc/ng-comics/issues/1
 
 # Spa
 
